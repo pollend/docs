@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+    service_doc:
+      build: ./
+      volumes:
+        - ./source:/docs/source
+      ports:
+        - 8100:80
